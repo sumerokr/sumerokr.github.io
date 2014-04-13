@@ -86,10 +86,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: #f0f0f0;
+    color: #4f4f4f;
+}
+
 .container {
     max-width: 60em;
+    padding-right: 1em;
+    padding-left: 1em;
     margin-right: auto;
     margin-left: auto;
+    background-color: #fafafa;
 }
 
 /* ==========================================================================

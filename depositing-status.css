@@ -33,11 +33,20 @@ a {
     height:100%;
     width:100%;
     }
+.fake-row {
+    display:table-row;
+    }
+.fake-cell {
+    display:table-cell;
+    }
+.status-row {
+    height:100%;
+    }
 .status-container {
     margin:auto;
     display:table-cell;
     text-align:center;
-    padding:0 10%;
+    padding:60px 10% 0;
     vertical-align:middle;
     }
 .status-head p {
@@ -85,6 +94,12 @@ a {
     }
 p.status-txt-try {
     margin:4em 0 0 0;
+    }
+.download-container {
+    display:table-cell;
+    padding:20px 0;
+    text-align:center;
+    line-height:20px;
     }
 
 

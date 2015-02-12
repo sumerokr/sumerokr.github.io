@@ -1,0 +1,246 @@
+html, body {
+    height:100%;
+    }
+body {
+    font:16px/1.33 Arial, Helvetica, sans-serif;
+    color:#576075;
+    background:url(../pic/mobile/currency-el-bg.jpg) 50% 100% no-repeat #dfe2e7;
+    text-shadow:0 1px 0 #fff;
+    }
+b {
+    font-weight:bold;
+    }
+a {
+    color:#3b5f92;
+    }
+/* slightly enhanced, universal clearfix hack */
+.clearfix:after {
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+    }
+.clearfix { display:inline-block; *zoom:1;}
+/* start commented backslash hack \*/
+* html .clearfix { height:1%; }
+.clearfix { display:block; }
+/* stop commented backslash hack */
+
+.wrapper {
+    display:table;
+    height:100%;
+    width:100%;
+    }
+.status-container {
+    margin:auto;
+    display:table-cell;
+    text-align:center;
+    padding:0 10%;
+    vertical-align:middle;
+    }
+.status-head p {
+    font-size:42px;
+    color:#4c566c;
+    }
+.status-pics {
+    max-width:100%;
+    }
+.status-content {
+    margin:0 auto;
+    width:90%;
+    }
+.application-row {
+    padding:7px;
+    margin:0 auto;
+    width:90%;
+    font-size:18px;
+    border:1px solid #b7b9bd;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    -webkit-box-shadow:0 1px 1px #b7b9bd inset, 0 1px 1px #fff;
+    -moz-box-shadow:0 1px 1px #b7b9bd inset, 0 1px 1px #fff;
+    box-shadow:0 1px 1px #b7b9bd inset, 0 1px 1px #fff;
+    background:#f7f7f7;
+    }
+.app-num-txt, .app-num-txt-phone {
+    float:left;
+    color:#7f7f7f;
+    }
+.app-num-txt-phone {
+    display:none;
+    }
+.app-num {
+    float:right;
+    font-weight:bold;
+    color:#000;
+    }
+.status-txt-for {
+    margin:1em 0 2em;
+    }
+.status-content p {
+    margin-top:1.5em;
+    }
+p.status-txt-try {
+    margin:4em 0 0 0;
+    }
+
+
+@media screen and (min-width:1160px) {
+    .application-row {
+        max-width:520px;
+        }
+    }
+
+@media screen and (min-width:767px) and (max-width:1159px) {
+    body {
+        background-size:100%;
+        }
+    .status-pics {
+        width:auto;
+        height:140px;
+        }
+    p.status-txt-for {
+        font-size:36px;
+        }
+    .status-content p {
+        font-size:14px;
+        line-height:19px;
+        margin-top:20px;
+        }
+    .error-wrapper .status-pics {
+        margin-top:145px;
+        }
+    .error-wrapper p.status-txt-for {
+        margin:15px auto 65px;
+        width:75%;
+        }
+    .error-wrapper .status-content p {
+        margin:10px auto;
+        width:75%;
+        }
+    .error-wrapper p.status-txt-try {
+        margin:60px auto;
+        width:52%;
+        }
+    .success-wrapper p.status-txt-for {
+        margin:25px auto 0px;
+        width:70%;
+        }
+    .success-wrapper .status-content p {
+        margin-top:100px;
+        width:62%;
+        }
+    }
+@media screen and (min-width:481px) and (max-width:766px) {
+    .status-pics {
+        width:auto;
+        height:120px;
+        }
+    p.status-txt-for {
+        margin:10px 0 20px;
+        font-size:32px;
+        }
+    .application-row span {
+        float:none;
+        }
+    }
+@media screen and (max-width:480px) {
+    body {
+        background-size:150%;
+        }
+    body .iphone-wrapper {
+        background:#f7f9fa;
+        }
+    .status-pics {
+        margin-top:30px;
+        width:auto;
+        height:75px;
+        }
+    p.status-txt-for {
+        margin:10px auto 10px;
+        font-size:25px;
+        line-height:27px;
+        }
+    p.status-txt-try {
+        margin:0;
+        }
+    p.status-txt-success {
+        font-size:25px;
+        line-height:27px;
+        }
+    .status-content {
+        margin-top:10px;
+        width:100%;
+        }
+    .application-row {
+        width:90%;
+        padding:15px 3%;
+        background:none;
+        border-radius:0;
+        border-left:none;
+        border-right:none;
+        box-shadow:none;
+        }
+    .iphone-wrapper .application-row {
+        padding:10px 3%;
+        border:2px solid #99aabe;
+        border-radius:3px;
+        }
+    .status-content p {
+        font-size:13px;
+        margin-top:20px;
+        }
+    .error-wrapper .status-pics {
+        margin-top:15px;
+        }
+    .error-wrapper p.status-txt-for {
+        line-height:34px;
+        }
+    .error-wrapper .status-content {
+        width:100%;
+        }
+    .error-wrapper .status-content p.status-txt-try {
+        display:block;
+        text-align:left;
+        font-size:13px;
+        padding:10px;
+        background-color:#DEE2F5;
+        }
+    .iphone-wrapper.error-wrapper .status-pics {
+        margin-top:10px;
+        }
+    .iphone-wrapper p.status-txt-for {
+        color:#9badc2;
+        font-size:26px;
+        line-height:30px;
+        }
+    .iphone-wrapper .status-content p {
+        margin-top:10px;
+        }
+    .iphone-wrapper .status-content p.status-txt-try {
+        padding:0;
+        text-align:center;
+        background:none;
+        }
+    .status-container {
+        padding:0 4%;
+        }
+    .app-num {
+        font-size:17px
+        }
+    .app-num-txt {
+        display:none;
+        }
+    .app-num-txt-phone {
+        display:block;
+        margin-top:2px
+        }
+    .iphone-wrapper .app-num-txt-phone {
+        margin-top:0;
+        color:#99aabe;
+        font-size:15px;
+        }
+    }
